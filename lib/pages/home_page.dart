@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Catelog app"),
+
       ),
       body: Center(
         child: Text("welcome to flutter $minDays to $maxDays days tutorial"),
