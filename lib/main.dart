@@ -1,21 +1,30 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
+
+
+
+
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  num minDays = 3;
+  num maxDays = 4.0;
+  var day = "tuesday";
+  String today = "monday";
+  static const pi = 3.14;
+  int eggs = 3;
+  double revenue = 4.00;
+  final value = 4;
 
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Material(
-        child: Center(
-          child: Text("welcome to flutter"),
-        ),
-      ),
+    return  MaterialApp(
+      home: HomePage(),
     );
   }
 }
